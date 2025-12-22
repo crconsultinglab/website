@@ -432,7 +432,7 @@ section {
     .custom-btn {
         font-size: 75%;
         padding: 0.5rem 1rem;
-        width: 50%
+        width: 100%
     }
 
     .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
@@ -442,4 +442,5 @@ section {
     .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
         background-color: transparent;
     }
+
 }
