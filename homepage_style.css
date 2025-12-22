@@ -203,14 +203,43 @@ p {
     height: 100%
 }
 
-#header a:hover,
-#header a:active,
-#header .active>a,
-#header .active>a:hover,
-#header .active>a:active {
+#navbar-about:hover,
+#navbar-about:active,
+#header .active>a#navbar-about,
+#header .active>a#navbar-about:hover,
+#header .active>a#navbar-about:active {
     background-color: transparent;
     color: var(--fucsia) !important;
 }
+
+#navbar-skills:hover,
+#navbar-skills:active,
+#header .active>a#navbar-skills,
+#header .active>a#navbar-skills:hover,
+#header .active>a#navbar-skills:active {
+    background-color: transparent;
+    color: var(--celeste) !important;
+}
+
+
+#navbar-method:hover,
+#navbar-method:active,
+#header .active>a#navbar-method,
+#header .active>a#navbar-method:hover,
+#header .active>a#navbar-method:active {
+    background-color: transparent;
+    color: var(--viola) !important;
+}
+
+#navbar-footer:hover,
+#navbar-footer:active,
+#header .active>a#navbar-footer,
+#header .active>a#navbar-footer:hover,
+#header .active>a#navbar-footer:active {
+    background-color: transparent;
+    color: var(--fucsia) !important;
+}
+
 
 #header-container {
     display: flex !important;
@@ -273,18 +302,32 @@ p {
 }
 
 #about {
-    background-color: var(--bianco);
-    color: var(--blu);
+    background-color: var(--blu);
+    color: var(--bianco);
+}
+
+#about-title{
+    color: var(--fucsia);
 }
 
 #skills {
-    background-color: var(--celeste);
-    color: var(--blu);
+    background-color: var(--blu);
+    color: var(--bianco);
 }
 
+#skills-title{
+    color: var(--celeste);
+}
+
+
+
 #method {
-    background-color: var(--viola);
-    color: var(--blu);
+    background-color: var(--blu);
+    color: var(--bianco);
+}
+
+#method-title{
+    color: var(--viola);
 }
 
 #contact {
@@ -305,9 +348,15 @@ section {
 }
 
 #about-paragraph,
+#skills-subtitle,
 #method-subtitle,
 #contact-paragraph {
     font-size: 24px;
+}
+
+.skills-body > ul{
+    padding-inline-start: 20px !important;
+    line-height: 180%;
 }
 
 .skills-paragraph,
@@ -381,8 +430,16 @@ section {
     }
 
     .custom-btn {
-    font-size: 75%;
-    padding: 0.5rem 1rem;
-    width: 50%
-}
+        font-size: 75%;
+        padding: 0.5rem 1rem;
+        width: 50%
+    }
+
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+        background-color: transparent;
+    }
 }
